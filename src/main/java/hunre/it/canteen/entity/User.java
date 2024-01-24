@@ -18,6 +18,7 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int id;
 
 	private String name;
@@ -32,10 +33,10 @@ public class User {
 
 	private int phone;
 
-	private String role; "ADMIN", "USER"; "ROLE_ADMIN", "ROLE_USER"
+	private String role;
 
 	private String userName;
 
 	private String password;
-
+//"ADMIN", "USER"; "ROLE_ADMIN", "ROLE_USER"
 }
